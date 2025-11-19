@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import { useTodos } from '../../hooks/useTodos';
 import './TodoList.scss';
-import { ChevronDown } from 'lucide-react';
-import { ChevronUp } from 'lucide-react';
 
 export function TodoList() {
     const {todos, addTodo, toggleTodo, deleteTodo} = useTodos();
