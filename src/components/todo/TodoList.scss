@@ -33,7 +33,13 @@
             }
 
             &.expanded {
+                .accordion-header {
+                    background: $pointColor;
 
+                    span {
+                        color: #fff;
+                    }
+                }
             }
         }
 

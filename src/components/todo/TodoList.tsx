@@ -7,7 +7,11 @@ import { ChevronUp } from 'lucide-react';
 export function TodoList() {
     const {todos, addTodo, toggleTodo, deleteTodo} = useTodos();
     const [input, setInput] = useState('');
-    const [expandedMonth, setExpandedMonth] = useState<string | null>(null);
+    const [expandedMonth, setExpandedMonth] = useState<string | null>(() => {
+        const now = new Date();
+        const currentKey = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}`;
+        return currentKey;
+    });
 
     const generateMonths = () => {
         const months = [];
@@ -59,7 +63,7 @@ export function TodoList() {
 
     return (
         <section className="todo-section">
-            <form onsubmit={handleSubmit} className="todo-form">
+            <form onSubmit={handleSubmit} className="todo-form">
                 <input
                     type="text"
                     value={input}
