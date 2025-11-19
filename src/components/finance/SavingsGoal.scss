@@ -1,0 +1,84 @@
+@use "../../styles/variables" as *;
+
+.savings-section {
+    .progress {
+        &-bar {
+            position: relative;
+            width: 100%;
+        }
+        
+        &-fill {
+            position: absolute;
+            background: $pointColor;
+            max-width: 100%;
+            height: 100%;
+        }
+
+        &-text {
+            display: block;
+            position: relative;
+            z-index: 1;
+            padding: 4px 8px;
+            font-weight: 500;
+            color: #fff;
+
+            &.init {
+                color: $pointColor;
+            }
+        }
+
+    }
+
+    .savings {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        border-top: 1px solid $pointColor;
+
+        li {
+            position: relative;
+            border-right: 1px solid $pointColor;
+            border-bottom: 1px solid $pointColor;
+            cursor: pointer;
+
+            &:hover {
+                span {
+                    background: $hoverBgColor;
+                }
+            }
+
+            &.active {
+                span {
+                    background: $pointColor;
+                    color: #fff;
+                }
+            }
+
+            &:nth-child(7n) {
+                border-right: unset;
+            }
+
+            &::before {
+                content: '';
+                display: block;
+                padding-bottom: 100%;
+            }
+
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                padding: 4px;
+                font-size: 12px;
+                font-weight: 600;
+            }
+        }
+
+        &-total {
+            padding: 4px 8px;
+            text-align: right;
+            font-weight: 500;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap');
+
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    padding: 12px;
+
+    .logo {
+        font-family: "Sniglet", system-ui;
+        font-size: 28px;
+        font-weight: 800;
+    }
+}

@@ -1,0 +1,49 @@
+@use "variables" as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    color: inherit;
+}
+
+button {
+    border: unset;
+    outline: unset;
+    background: unset;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    color: #1a1a1a;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "todo savings"
+        "todo shopping";
+    gap: 0;
+    height: 100vh;
+}
+
+.todo-section {
+    grid-area: todo;
+}
+
+.savings-section {
+    grid-area: savings;
+}
+
+.shopping-section {
+    grid-area: shopping;
+}
+

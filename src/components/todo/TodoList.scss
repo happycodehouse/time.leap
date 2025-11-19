@@ -1,0 +1,58 @@
+@use "../../styles/variables" as *;
+
+.todo-section {
+    border-right: 1px solid $pointColor;
+
+    .todo-form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        input {
+            flex: auto;
+            border: unset;
+            padding: 4px 12px;
+            height: 100%;
+        }
+
+        button {
+            width: 60px;
+            padding: 4px 8px;
+            background: $pointColor;
+            color: #fff;
+        }
+    }
+
+    .accordion {
+        > li {
+            border-top: 1px solid $pointColor;
+
+            &:last-child {
+                border-bottom: 1px solid $pointColor;
+            }
+
+            &.expanded {
+
+            }
+        }
+
+        &-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            width: 100%;
+            padding: 4px 8px;
+            cursor: pointer;
+
+            span {
+                font-size: 14px;
+            }
+
+            &:hover {
+                background: $hoverBgColor;
+            }
+        }
+    }
+}
