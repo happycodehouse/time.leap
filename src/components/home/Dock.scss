@@ -1,0 +1,22 @@
+.dock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 12px;
+    border-radius: 18px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+
+    &-icon {
+        transition: transform .2s;
+
+        &:hover {
+            transform: translateY(-4px);
+        }
+    }
+}
