@@ -16,7 +16,6 @@ export function TodoList() {
         const start = new Date(2025, 10, 1);
         const end = new Date(2027, 4, 1);
 
-
         let current = new Date(start);
 
         while (current <= end) {
@@ -94,8 +93,9 @@ export function TodoList() {
                                                     key={todo.id}
                                                     className={todo.completed ? 'completed' : ''}
                                                 >
-                                                    <label>
+                                                    <label htmlFor={todo.id}>
                                                         <input
+                                                            id={todo.id}
                                                             type="checkbox"
                                                             checked={todo.completed}
                                                             onChange={() => toggleTodo(todo.id)}
@@ -120,8 +120,6 @@ export function TodoList() {
                     )
                 })}
             </ul>
-
-
 
             {/*            {todos.length === 0 && (
                 <p className="empty-message">No data</p>
