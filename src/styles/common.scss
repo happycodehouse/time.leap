@@ -1,12 +1,11 @@
+@use "fonts" as *;
 @use "variables" as *;
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'AppleSDGothicNeo', -apple-system, BlinkMacSystemFont, sans-serif;
     color: inherit;
 }
 
@@ -24,8 +23,6 @@ ul {
 body {
     color: #1a1a1a;
 }
-
-.container {}
 
 .todo-section {
     grid-area: todo;

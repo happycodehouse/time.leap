@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'AppleSDGothicNeo';
+    font-weight: 100;  // UltraLight
+    src: url('./../assets/fonts/AppleSDGothicNeoUL.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'AppleSDGothicNeo';
+    font-weight: 200;  // Thin
+    src: url('./../assets/fonts/AppleSDGothicNeoT.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'AppleSDGothicNeo';
+    font-weight: 300;  // Light
+    src: url('./../assets/fonts/AppleSDGothicNeoL.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'AppleSDGothicNeo';
+    font-weight: 400;  // Regular
+    src: url('./../assets/fonts/AppleSDGothicNeoR.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'AppleSDGothicNeo';
+    font-weight: 500;  // Medium
+    src: url('./../assets/fonts/AppleSDGothicNeoM.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'AppleSDGothicNeo';
+    font-weight: 600;  // SemiBold
+    src: url('./../assets/fonts/AppleSDGothicNeoSB.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'AppleSDGothicNeo';
+    font-weight: 700;  // Bold
+    src: url('./../assets/fonts/AppleSDGothicNeoB.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'AppleSDGothicNeo';
+    font-weight: 800;  // ExtraBold
+    src: url('./../assets/fonts/AppleSDGothicNeoEB.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'AppleSDGothicNeo';
+    font-weight: 900;  // Heavy
+    src: url('./../assets/fonts/AppleSDGothicNeoH.woff') format('woff');
+}
+
+// 전역 적용
+body {
+    font-family: 'AppleSDGothicNeo', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 400;  // 기본은 Regular
+}
