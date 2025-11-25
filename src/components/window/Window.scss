@@ -1,0 +1,51 @@
+.window {
+    overflow: hidden;
+    position: fixed;
+    z-index: 100;
+    min-width: 400px;
+    min-height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    background: white;
+
+    &-header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 6px;
+        padding: 6px 8px;
+        background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(181, 181, 181, 0.5) 100%);
+    }
+
+    &-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 16px;
+        height: 16px;
+        border-radius: 99px;
+
+        &.red {
+            background: #FF5F57;
+        }
+        
+        &.yellow {
+            background: #FFBD2E;
+        }
+        
+        &.green {
+            background: #28C840;
+        }
+    }
+
+    &-title {
+        margin-left: auto;
+        font-size: 12px;
+        line-height: 1;
+        color: #999;
+    }
+
+    &-content {
+        background: white;
+    }
+}
